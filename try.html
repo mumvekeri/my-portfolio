@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 50px;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        button {
+            background: #ff6f61;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff3b30;
+        }
+        #surprise {
+            font-size: 1.5em;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .hidden {
+            display: none;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, My Love! 🎉</h1>
+        <p>
+            My love, today is such a special day because it marks the day the most amazing person was born. 
+            You are the light of my life, the warmth in my heart, and the joy in every single moment we share. 
+            From the moment I met you, my world has been filled with laughter, love, and so much happiness. 
+            Your kindness, your smile, your incredible soul make every day feel like a blessing. 
+            I cherish every memory we've made together, and I can't wait for all the beautiful moments that are yet to come. 
+            Thank you for being my love, my best friend, and my everything. I love you more than words can ever express. 
+            Happy Birthday, my sweetheart! May all your dreams come true today and always. ❤️
+        </p>
+        <button onclick="showSurprise()">Click for a Surprise</button>
+        <div id="surprise" class="hidden">I love you more than words can say! ❤️</div>
+        <div class="gallery">
+            <img src="photo1.jpg" alt="Memory 1">
+            <img src="photo2.jpg" alt="Memory 2">
+            <img src="photo3.jpg" alt="Memory 3">
+        </div>
+        <audio autoplay loop>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script>
+        function showSurprise() {
+            var surprise = document.getElementById("surprise");
+            surprise.classList.remove("hidden");
+            surprise.style.opacity = "1";
+        }
+    </script>
+</body>
+</html>
